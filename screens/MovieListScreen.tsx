@@ -10,6 +10,9 @@ import {
   ActivityIndicator,
 } from 'react-native';
 
+import { TMDB_API_KEY } from '@env';
+
+
 interface Movie {
   id: number;
   title: string;
@@ -17,7 +20,7 @@ interface Movie {
   vote_average: number;
 }
 
-const API_KEY = '77a7a1ad27722701cbc51092242518aa'; 
+const API_KEY = TMDB_API_KEY; 
 const API_URL = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
 
 const MovieListScreen = ({ navigation }: any) => {
@@ -25,6 +28,7 @@ const MovieListScreen = ({ navigation }: any) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    console.log('TMDB_API_KEY: ', TMDB_API_KEY);
     fetch(API_URL)
       .then((response) => response.json())
       .then((data) => {

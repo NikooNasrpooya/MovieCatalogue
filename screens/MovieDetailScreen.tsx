@@ -9,6 +9,9 @@ import {
   ScrollView,
 } from 'react-native';
 import { RouteProp } from '@react-navigation/native';
+import { TMDB_API_KEY } from '@env';
+
+
 
 interface MovieDetail {
   id: number;
@@ -19,7 +22,7 @@ interface MovieDetail {
   release_date: string;
 }
 
-// 👇 type for navigation route params
+//  navigation route params
 type RootStackParamList = {
   MovieDetail: { movieId: number };
 };
@@ -28,7 +31,7 @@ type Props = {
   route: RouteProp<RootStackParamList, 'MovieDetail'>;
 };
 
-const API_KEY = '77a7a1ad27722701cbc51092242518aa'; 
+const API_KEY = TMDB_API_KEY; 
 
 const MovieDetailScreen: React.FC<Props> = ({ route }) => {
   const { movieId } = route.params;
@@ -36,6 +39,7 @@ const MovieDetailScreen: React.FC<Props> = ({ route }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    console.log('TMDB_API_KEY: ', TMDB_API_KEY);
     fetch(
       `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}&language=en-US`
     )

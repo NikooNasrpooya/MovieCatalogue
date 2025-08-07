@@ -7,6 +7,8 @@ import MovieListScreen from './screens/MovieListScreen';
 import MovieDetailScreen from './screens/MovieDetailScreen';
 
 
+
+
 type RootStackParamList = {
   Movies: undefined;
   MovieDetail: { movieId: number };
