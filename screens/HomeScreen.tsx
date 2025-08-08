@@ -34,6 +34,7 @@ export default function HomeScreen() {
       <SearchBar />
       <SectionHeader title="Now Playing" />
       <MovieCarousel data={nowPlaying} />
+      <SectionHeader title="Cooming Soon" />
     </ScrollView>
   );
 }
