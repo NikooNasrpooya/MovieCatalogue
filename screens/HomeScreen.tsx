@@ -5,7 +5,7 @@ import { tmdb } from '../src/api/tmdb';
 import { Movie } from '../types';
 import HeaderSection from '../src/components/HeaderSection';
 import SearchBar from '../src/components/SearchBar';
-
+import SectionHeader from '../src/components/SectionHeader';
 
 
 
@@ -28,6 +28,7 @@ export default function HomeScreen() {
       <StatusBar barStyle="light-content" />
       <HeaderSection />
       <SearchBar />
+      <SectionHeader title="Now Playing" />
     </ScrollView>
   );
 }
