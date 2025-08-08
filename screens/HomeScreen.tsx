@@ -7,7 +7,7 @@ import HeaderSection from '../src/components/HeaderSection';
 import SearchBar from '../src/components/SearchBar';
 import SectionHeader from '../src/components/SectionHeader';
 import MovieCarousel from '../src/components/MovieCarousel';
-
+import ComingSoonList from '../src/components/ComingSoonList';
 
 
 export default function HomeScreen() {
@@ -35,6 +35,7 @@ export default function HomeScreen() {
       <SectionHeader title="Now Playing" />
       <MovieCarousel data={nowPlaying} />
       <SectionHeader title="Cooming Soon" />
+      <ComingSoonList data={upcoming.slice(0, 6)} />
     </ScrollView>
   );
 }
