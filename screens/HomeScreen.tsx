@@ -4,6 +4,7 @@ import { colors } from '../src/theme/colors';
 import { tmdb } from '../src/api/tmdb';
 import { Movie } from '../types';
 import HeaderSection from '../src/components/HeaderSection';
+import SearchBar from '../src/components/SearchBar';
 
 
 
@@ -24,9 +25,9 @@ export default function HomeScreen() {
 
   return (
     <ScrollView style={{ flex: 1, backgroundColor: colors.bg }} contentInsetAdjustmentBehavior="always">
-      <HeaderSection />
       <StatusBar barStyle="light-content" />
-      
+      <HeaderSection />
+      <SearchBar />
     </ScrollView>
   );
 }
