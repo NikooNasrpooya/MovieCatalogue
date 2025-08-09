@@ -9,7 +9,7 @@ export interface Movie {
   release_date: string;
 }
 export type RootStackParamList = {
-  Home: undefined; // No params for Home
+  Home: undefined; // 
   Movies: undefined;
-  MovieDetail: { movieId: number }; // Example: MovieDetail takes movieId as param
+  MovieDetail: { movieId: number }; // 
 };

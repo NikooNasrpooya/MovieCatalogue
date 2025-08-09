@@ -15,4 +15,6 @@ export const tmdb = {
   nowPlaying: () => get('/movie/now_playing?page=1'),
   upcoming: () => get('/movie/upcoming?page=1'),
   detail: (id: number) => get(`/movie/${id}`),
+  credits: (id: number) => get(`/movie/${id}/credits`),
+  videos: (id: number) => get(`/movie/${id}/videos`),
 };

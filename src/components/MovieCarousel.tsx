@@ -10,6 +10,7 @@ const CARD_W = width * 0.72;
 
 export default function MovieCarousel({ data }: { data: Movie[] }) {
   const nav = useNavigation<any>();
+  console.log('NAV STATE:', JSON.stringify(nav.getState(), null, 2));
   const dots = useMemo(() => new Array(Math.min(5, data.length)).fill(0), [data.length]);
 
   return (
@@ -25,6 +26,7 @@ export default function MovieCarousel({ data }: { data: Movie[] }) {
         ItemSeparatorComponent={() => <View style={{ width: 20 }} />}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => nav.navigate('MovieDetail', { movieId: item.id })}>
+
             <View style={{
               width: CARD_W, borderRadius: 24, overflow: 'hidden',
               backgroundColor: colors.card
