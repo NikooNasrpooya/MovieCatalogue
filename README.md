@@ -102,6 +102,6 @@ npx expo publish
 
 | Home                                   | Detail                                 |
 | -------------------------------------- | -------------------------------------- | ---------------------------------------- |
-| ![Home](assets/assets/HomeScreen1.png) | ![Home](assets/assets/HomeScreen2.png) | ![Detail](assets/assets/MovieDetail.png) |
+| ![Home](./assets/assets/HomeScreen1.png) | ![Home](./assets/assets/HomeScreen2.png) | ![Detail](./assets/assets/MovieDetail.png) |
 
 ---
