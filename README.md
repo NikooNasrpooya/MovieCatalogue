@@ -1,6 +1,6 @@
 # 🎬 Movie Catalogue (React Native + Expo + TypeScript)
 
-Browse popular movies, view details, and explore trailers using the TMDB API — built with React Native (Expo) and TypeScript.
+Browse popular movies, view details, and explore trailers using the TMDB API, built with React Native (Expo) and TypeScript.
 
 ![Platform](https://img.shields.io/badge/Expo-React%20Native-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-4%2B-3178c6) ![TMDB](https://img.shields.io/badge/TMDB-API-0dbd8b) ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
@@ -23,20 +23,18 @@ Browse popular movies, view details, and explore trailers using the TMDB API —
 - **TypeScript**
 - **React Navigation** (Native Stack)
 - **Axios / Fetch** for API calls
-- **TMDB API**  
-
+- **TMDB API**
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1) Clone & Install
+
 ```bash
-git clone https://github.com/TODO/your-repo.git
-cd your-repo
+git clone https://github.com/NikooNasrpooya/MovieCatalogue
+cd MovieCatalogue
 npm install
-# or
-yarn
 ```
 
 ### 2) TMDB API Key
@@ -45,9 +43,9 @@ Create a TMDB account → get an **API Key (v3 auth)**.
 
 **Expo-friendly config (recommended):**
 
-- In `app.config.ts` (or `app.json`), add:
+- In `app.config.ts`, add:
+
 ```ts
-// app.config.ts
 export default {
   expo: {
     name: "MovieCatalogue",
@@ -60,16 +58,19 @@ export default {
 ```
 
 - Add a `.env` file:
+
 ```
 TMDB_API_KEY=YOUR_TMDB_KEY_HERE
 ```
 
 - Install env support:
+
 ```bash
 npm i -D dotenv
 ```
 
-- Access in code:
+- In src/services/tmdb.ts:
+
 ```ts
 import Constants from "expo-constants";
 const API_KEY = Constants.expoConfig?.extra?.TMDB_API_KEY;
@@ -78,6 +79,7 @@ const API_KEY = Constants.expoConfig?.extra?.TMDB_API_KEY;
 > If you already use `@env` (react-native-dotenv), keep it — just ensure `.env` is in `.gitignore` and you have the babel plugin configured.
 
 ### 3) Run the App
+
 ```bash
 npx expo start
 # Press i to open iOS simulator, a for Android, or scan the QR in Expo Go
@@ -85,9 +87,10 @@ npx expo start
 
 ---
 
-## 🌐 Web Build 
+## 🌐 Web Build
 
 Or publish to Expo:
+
 ```bash
 npx expo publish
 # Share the QR link in this README and on LinkedIn
@@ -95,14 +98,10 @@ npx expo publish
 
 ---
 
-
 ## 🖼️ Screenshots
 
-| Home | Detail |
-|---|---|
-| ![Home](assets/home-placeholder.png) | ![Detail](assets/detail-placeholder.png) |
-
-> Replace `assets/home-placeholder.png` and `assets/detail-placeholder.png` with your own.
+| Home                                   | Detail                                 |
+| -------------------------------------- | -------------------------------------- | ---------------------------------------- |
+| ![Home](assets/assets/HomeScreen1.png) | ![Home](assets/assets/HomeScreen2.png) | ![Detail](assets/assets/MovieDetail.png) |
 
 ---
-
