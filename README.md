@@ -1,0 +1,108 @@
+# 🎬 Movie Catalogue (React Native + Expo + TypeScript)
+
+Browse popular movies, view details, and explore trailers using the TMDB API — built with React Native (Expo) and TypeScript.
+
+![Platform](https://img.shields.io/badge/Expo-React%20Native-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-4%2B-3178c6) ![TMDB](https://img.shields.io/badge/TMDB-API-0dbd8b) ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+---
+
+## ✨ Features
+
+- Popular movies list from TMDB
+- Movie detail screen (poster, rating, release date, overview)
+- Type-safe API models (TypeScript interfaces)
+- Smooth list & (optional) carousel UI
+- Loading/error states
+- Modular structure (components / services / hooks)
+
+---
+
+## 🧱 Tech Stack
+
+- **React Native** (Expo)
+- **TypeScript**
+- **React Navigation** (Native Stack)
+- **Axios / Fetch** for API calls
+- **TMDB API**  
+
+
+---
+
+## 🚀 Getting Started
+
+### 1) Clone & Install
+```bash
+git clone https://github.com/TODO/your-repo.git
+cd your-repo
+npm install
+# or
+yarn
+```
+
+### 2) TMDB API Key
+
+Create a TMDB account → get an **API Key (v3 auth)**.
+
+**Expo-friendly config (recommended):**
+
+- In `app.config.ts` (or `app.json`), add:
+```ts
+// app.config.ts
+export default {
+  expo: {
+    name: "MovieCatalogue",
+    slug: "movie-catalogue",
+    extra: {
+      TMDB_API_KEY: process.env.TMDB_API_KEY,
+    },
+  },
+};
+```
+
+- Add a `.env` file:
+```
+TMDB_API_KEY=YOUR_TMDB_KEY_HERE
+```
+
+- Install env support:
+```bash
+npm i -D dotenv
+```
+
+- Access in code:
+```ts
+import Constants from "expo-constants";
+const API_KEY = Constants.expoConfig?.extra?.TMDB_API_KEY;
+```
+
+> If you already use `@env` (react-native-dotenv), keep it — just ensure `.env` is in `.gitignore` and you have the babel plugin configured.
+
+### 3) Run the App
+```bash
+npx expo start
+# Press i to open iOS simulator, a for Android, or scan the QR in Expo Go
+```
+
+---
+
+## 🌐 Web Build 
+
+Or publish to Expo:
+```bash
+npx expo publish
+# Share the QR link in this README and on LinkedIn
+```
+
+---
+
+
+## 🖼️ Screenshots
+
+| Home | Detail |
+|---|---|
+| ![Home](assets/home-placeholder.png) | ![Detail](assets/detail-placeholder.png) |
+
+> Replace `assets/home-placeholder.png` and `assets/detail-placeholder.png` with your own.
+
+---
+
