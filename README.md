@@ -87,21 +87,12 @@ npx expo start
 
 ---
 
-## 🌐 Web Build
-
-Or publish to Expo:
-
-```bash
-npx expo publish
-# Share the QR link in this README and on LinkedIn
-```
-
----
-
 ## 🖼️ Screenshots
 
-| Home                              | Detail                            |
-| --------------------------------- | --------------------------------- | ----------------------------------- |
-| ![Home](./assets/HomeScreen1.png) | ![Home](./assets/HomeScreen2.png) | ![Detail](./assets/MovieDetail.png) |
-
----
+<table>
+  <tr>
+    <td><img src="./assets/HomeScreen1.png" alt="Home" width="250"/></td>
+    <td><img src="./assets/HomeScreen2.png" alt="Home" width="250"/></td>
+    <td><img src="./assets/MovieDetail.png" alt="Detail" width="250"/></td>
+  </tr>
+</table>
