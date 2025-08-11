@@ -100,8 +100,8 @@ npx expo publish
 
 ## 🖼️ Screenshots
 
-| Home                                   | Detail                                 |
-| -------------------------------------- | -------------------------------------- | ---------------------------------------- |
-| ![Home](./assets/assets/HomeScreen1.png) | ![Home](./assets/assets/HomeScreen2.png) | ![Detail](./assets/assets/MovieDetail.png) |
+| Home                              | Detail                            |
+| --------------------------------- | --------------------------------- | ----------------------------------- |
+| ![Home](./assets/HomeScreen1.png) | ![Home](./assets/HomeScreen2.png) | ![Detail](./assets/MovieDetail.png) |
 
 ---
